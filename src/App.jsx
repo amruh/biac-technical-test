@@ -1,11 +1,15 @@
-import Child from "./components/Child";
-import { ChakraProvider } from '@chakra-ui/react'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <ChakraProvider>
-      <Child />
-    </ChakraProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage/>}/>
+        <Route path="/home" element={<HomePage/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
