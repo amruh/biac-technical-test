@@ -11,7 +11,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-export default function ProductCard({name}) {
+export default function ProductCard({ name }) {
   return (
     <Card maxW="sm" shadow='md'>
       <CardBody>

@@ -1,15 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-// const initialState = {
-//   value: 0,
-// }
-
 export const cartSlices = createSlice({
   name: 'counter',
   cart : [],
   reducers: {
     increment: (state) => {
-     
       state.value += 1
     },
     decrement: (state) => {

@@ -1,4 +1,6 @@
 import axios from "axios";
+import { configureStore } from "@reduxjs/toolkit";
+// import cartReducer from "../slices/cartSlice";
 export const LOGIN = "LOGIN";
 
 const apiUrl =
@@ -20,11 +22,10 @@ export const getLogin = (username, password) => (dispatch) => {
     });
 };
 
-import { configureStore } from "@reduxjs/toolkit";
-import cartReducer from "../slices/cartSlice";
+
 
 export const store = configureStore({
   reducer: {
-    cart: cartReducer
+    // cart: cartReducer
   },
 });
